@@ -14,7 +14,7 @@ I am a theoretical researcher with focus on mathematical logic, computational <a
 - [CV](cv/)
 
 <div style="display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap;">
-  <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Portrait of {{ site.author.name }}" width="140" height="140" style="border-radius:.5rem; border:1px solid var(--border); object-fit:cover;">
+  <img src="{{ '/assets/IMG_3274.jpg' | relative_url }}" alt="Portrait of {{ site.author.name }}" width="140" height="140" style="border-radius:.5rem; border:1px solid var(--border); object-fit:cover;">
   <div>
     <p><strong>Affiliation:</strong> {{ site.author.affiliation }}</p>
     <p><strong>Email:</strong> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
