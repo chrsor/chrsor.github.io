@@ -1,16 +1,43 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }} · {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
-<body>
-  <main class="wrap">
-    <h1>{{ page.title }}</h1>
-    {{ content }}
-  </main>
-</body>
+<html lang="en" data-theme="auto">
+  <head>
+    {% include head.html %}
+    <title>{{ page.title }} · {{ site.title }}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <nav class="site-nav" aria-label="Main">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+          <ul>
+            {% for item in site.nav %}
+              <li><a href="{{ item.link | relative_url }}" {% if page.url == item.link %}aria-current="page"{% endif %}>{{ item.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="wrap">
+      <article class="page">
+        <header class="page-header">
+          <h1 class="page-title">{{ page.title }}</h1>
+        </header>
+        <section class="page-content">
+          {{ content }}
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; <span id="year"></span> {{ site.author.name | default: site.title }} · <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+      </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
 </html>
