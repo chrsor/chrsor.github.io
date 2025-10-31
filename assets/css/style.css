@@ -1,0 +1,16 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 70ch;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  line-height: 1.6;
+  background: #fff;
+  color: #111;
+}
+h1,h2,h3 { color: #004b63; }
+a { color: #006d77; text-decoration: none; }
+a:hover { text-decoration: underline; }
+@media (prefers-color-scheme: dark) {
+  body { background: #0b0f14; color: #e9eef3; }
+  a { color: #58a6ff; }
+}
