@@ -5,7 +5,7 @@ permalink: /
 ---
 <div class="lead">
 <p>Welcome!
-I am a theoretical researcher with focus on mathematical logic, computational <analysis, topology, functional analysis>, complexity theory and philosophy of perception.</p>
+I am a theoretical researcher with focus on mathematical logic, computational analysis, topology & functional analysis, complexity theory and the philosophy of perception.</p>
 </div>
 
 - [Research](research/)
