@@ -1,0 +1,10 @@
+- title: "Solvability Complexity Index Classification For Koopman Operator Spectra In L^p for 1 < p < \infty"
+  authors: ["Christopher Sorg"]
+  venue: "tba"
+  year: 2025
+  topics: ["spectral theory", "computational complexity", "descriptive set theory"]
+  links:
+    arxiv: "2509.16016"
+    pdf: "/assets/papers/SCI-Lp-preprint.pdf"
+  abstract: "We study the computation of the approximate point spectrum and the approximate point \varepsilon-pseudospectrum of bounded Koopman operators acting on L^p(\mathcal{X},\omega) for 1 < p < \infty and a compact metric space (\mathcal{X},d_{\mathcal{X}}) with finite Borel measure \omega. Building on finite sections in a computable unconditional Schauder basis of L^p(\mathcal{X},\omega), we design residual tests that use only finitely many evaluations of the underlying map and produce compact sets on a planar grid, that converge in the Hausdorff metric to the target spectral sets, without spectral pollution. From these constructions we obtain a complete classification, in the sense of the Solvability Complexity Index, of how many limiting procedures are inherently necessary. Also we analyze the sufficiency and existence of a Wold-von Neumann decomposition analog, that was used in the special L^2-case.
+    The main difficulty in extending from the already analyzed Hilbert setting (p=2) to general L^p is the loss of orthogonality and Hilbertian structure: there is no orthonormal basis with orthogonal coordinate projections in general, the canonical truncations En in a computable Schauder dictionary need not be contractive (and may oscillate) and the Wold-von Neumann reduction has no directly computable analog in Lp. We overcome these obstacles by working with computable unconditional dictionaries adapted to dyadic/Lipschitz filtrations and proving stability of residual tests under non-orthogonal truncations."
