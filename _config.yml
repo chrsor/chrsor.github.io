@@ -15,3 +15,29 @@ markdown: kramdown
 kramdown:
   input: GFM
   math_engine: mathjax
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+permalink: /:categories/:year/:month/:day/:title/
+
+nav:
+  - name: Home
+    link: /
+  - name: Publications
+    link: /publications/
+  - name: Teaching
+    link: /teaching/
+  - name: Notes
+    link: /notes/
+  - name: Blog
+    link: /blog/
+  - name: CV
+    link: /cv/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
