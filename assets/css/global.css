@@ -114,7 +114,8 @@ a { color: var(--link); }
 .text-muted { color: var(--muted) !important; }
 .border, .table, .table th, .table td { border-color: var(--border) !important; }
 
-.navbar, .card { background-color: var(--card) !important; color: var(--text); border-color: var(--border); }
+/*.navbar, .card { background-color: var(--card) !important; color: var(--text); border-color: var(--border); }*/
+.card { background-color: var(--card) !important; color: var(--text); border-color: var(--border); }
 .navbar-light .navbar-brand,
 .navbar-light .navbar-nav .nav-link { color: var(--text) !important; }
 .dropdown-menu { background-color: var(--card); border-color: var(--border); }
