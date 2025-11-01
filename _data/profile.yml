@@ -3,9 +3,9 @@ secondary_name: ""
 navbar_name: "Christopher Sorg"
 
 positions:
-- name: Title or Position
+- name: Research Assistant
 - name: Friedrich-Alexander-Universität Erlangen-Nürnberg
-  logo: #/assets/images/badges/MIT_Social_circle.png  
+  #logo: #/assets/images/badges/MIT_Social_circle.png
 
 
 email: "chr.sorg@fau.de"
@@ -19,9 +19,9 @@ short_bio: >-
     Welcome! I am a researcher in mathematical logic, computational analysis, topology & functional analysis, complexity theory, functional analysis and the philosophy of perception.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    In my career so far, I have gained extensive experience in the field of partial differential equations, 
+    as well as calculus of variations, functional analysis, spectral theory and mathematical logic. In my computer science studies
+    I also had deep contact to decidability problems, like the SAT problem and descriptive set theory.
   </p>
 
 portrait_url: /assets/images/photos/IMG_3274.jpg
@@ -30,25 +30,62 @@ portrait_caption: >-
 
 education:
 - name: Ludwig-Maximilians-Universität München
-  logo: #/assets/images/badges/MIT_Social_circle.png
+  #logo: #/assets/images/badges/MIT_Social_circle.png
   position: >- 
     Bachelor of Science in Computer Science plus Mathematics
-  date:
+  date: 09/2021
 - name: Friedrich-Alexander-Universität Erlangen-Nürnberg
-  logo: #/assets/images/badges/PKU_red.png
+  #logo: #/assets/images/badges/PKU_red.png
   position: Master of Science in Mathematics
-  date:
+  date: 02/2024
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+ - name: LMU München
+   position: Student Assistant
+   lecture: Calculus I for Computer Science and Statistics
+   date: 10/2019 - 02/2020
+ - name: LMU München
+   position: Student Assistant
+   lecture: Algorithms And Data Structures
+   date: 04/2020 - 08/2020
+ - name: LMU München
+   position: Student Assistant
+   lecture: Calculus I for Computer Science and Statistics
+   date: 10/2020 - 02/2021
+ - name: FAU Erlangen-Nürnberg
+   position: Student Assistant
+   lecture: Analysis I
+   date: 11/2022 - 04/2023
+ - name: FAU Erlangen-Nürnberg
+   position: Student Assistant
+   lecture: Analysis II
+   date: 05/2023 - 10/2023
+ - name: FAU Erlangen-Nürnberg
+   position: Student Assistant
+   lecture: Analysis III
+   date: 10/2023 - 02/2024
+ - name: FAU Erlangen-Nürnberg
+   position: Student Assistant
+   lecture: Analysis I
+   date: 10/2023 - 02/2024
 
-awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+teaching:
+  - name: FAU Erlangen-Nürnberg
+    position: Lecture Assistant
+    lecture: Stochastic for Computer Science (C4)
+    date: 04/2024 - 09/2024
+  - name: FAU Erlangen-Nürnberg
+    position: Lecture Assistant
+    lecture: Linear Algebra for Computer Science (C1)
+    date: 10/2024 - 02/2025
+  - name: FAU Erlangen-Nürnberg
+    position: Lecture Assistant
+    lecture: Algebra & ODE for Computer Science (C3)
+    date: 10/2025 - today
+#awards:
+#- name: Award Name 2
+#  date: 2024
+#- name: Award Name 1
+#  date: 2021
+#- name: A quick brown fox jumps over the lazy dog and runs away award
+#  date: 2021
