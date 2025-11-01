@@ -90,3 +90,39 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
+/* === Theme Tokens === */
+:root {
+    --bg:    #ffffff;
+    --text:  #0b0b0c;
+    --muted: #5f6368;
+    --border:#e5e7eb;
+    --card:  #ffffff;
+    --link:  #006d77;
+}
+
+html[data-theme="dark"] {
+    --bg:    #0b0f14;
+    --text:  #e9eef3;
+    --muted: #bbc3cf;
+    --border:#283544;
+    --card:  #0f1420;
+    --link:  #58a6ff;
+}
+
+body, .bg-light { background-color: var(--bg) !important; color: var(--text); }
+a { color: var(--link); }
+.text-muted { color: var(--muted) !important; }
+.border, .table, .table th, .table td { border-color: var(--border) !important; }
+
+.navbar, .card { background-color: var(--card) !important; color: var(--text); border-color: var(--border); }
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link { color: var(--text) !important; }
+.dropdown-menu { background-color: var(--card); border-color: var(--border); }
+.dropdown-item { color: var(--text); }
+.dropdown-item:hover { background-color: rgba(255,255,255,.06); }
+
+html[data-theme="dark"] .btn-outline-secondary { color: var(--text); border-color: #4b5563; }
+html[data-theme="dark"] .btn-outline-secondary:hover { background-color: #1f2937; }
+
+.katex, .katex-display { color: inherit; }
+
