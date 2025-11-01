@@ -55,18 +55,21 @@
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
                             <h6>Teaching</h6>
-                            <ul class="list small mb-1">
-                                {% for item in site.data.profile.teaching %}
-                                <li class="media mb-1">
-                                    <!-- <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1"> -->
-                                    <div class="media-body">
-                                        <div>{{ item.name }}</div>
-                                        <!--<div class="small">{{ item.dept }}</div> -->
-                                        <div class="small d-flex">
-                                            <div>{{ item.position }}</div>
-                                            <div>{{ item.lecture }}</div>
-                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                            <ul class="teach-list list-unstyled mb-0">
+                                {% assign items = include.items | default: site.data.profile.teaching %}
+                                {% for t in items %}
+                                <li class="teach-item">
+                                    <div class="teach-rows">
+                                        <!-- Linke Spalte: Institution + Metadaten -->
+                                        <div class="teach-left">
+                                            <h5 class="mb-1 hyphens-auto">{{ t.name }}</h5>
+                                            <div class="teach-meta">
+                                                <div class="teach-label">Position</div><div class="teach-value">{{ t.position }}</div>
+                                                <div class="teach-label">Lecture</div> <div class="teach-value">{{ t.lecture }}</div>
+                                            </div>
                                         </div>
+                                        <!-- Rechte Spalte: Datum, rechtsbündig und ohne Umbruch -->
+                                        <div class="teach-date">{{ t.date }}</div>
                                     </div>
                                 </li>
                                 {% endfor %}
