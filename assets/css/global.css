@@ -129,50 +129,41 @@ html[data-theme="dark"] .btn-outline-secondary:hover { background-color: #1f2937
 
 .katex, .katex-display { color: inherit; }
 
-/* ===== Teaching section (grid-basiert) ===== */
+/* ===== Einheitliches Layout für Education/Experience/Teaching ===== */
 .teach-item + .teach-item { margin-top: 1.25rem; }
 
+/* Hauptzeile: links Inhalt, rechts Datum */
 .teach-rows {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto; /* links Inhalt, rechts Datum */
+    grid-template-columns: 1fr auto;
     column-gap: 1rem;
     align-items: start;
 }
 
-.teach-left h5 { line-height: 1.25; }
+.teach-left { min-width: 0; }
 
+/* Label/Wert-Raster */
 .teach-meta {
     display: grid;
-    grid-template-columns: max-content 1fr; /* Label-Spalte schmal, Wert flexibel */
+    grid-template-columns: max-content 1fr;  /* links Label eng, rechts Wert flexibel */
     column-gap: .75rem;
     row-gap: .15rem;
     margin-top: .25rem;
 }
+.teach-label { color: var(--muted); white-space: nowrap; }
+.teach-value { min-width: 0; overflow-wrap: anywhere; word-break: normal; }
 
-.teach-label {
-    color: var(--muted);
-    white-space: nowrap;      /* "Position" / "Lecture" brechen nicht */
-}
+/* Datum rechts, eine Zeile */
+.teach-date { text-align: right; white-space: nowrap; color: var(--muted); font-weight: 600; }
 
-.teach-value {
-    min-width: 0;             /* erlaubt Umbruch/Hyphenation in sehr langen Titeln */
-    word-break: normal;
-}
-
-.teach-date {
-    text-align: right;
-    white-space: nowrap;      /* Datum bleibt in einer Zeile */
-    color: var(--muted);
-    font-weight: 600;
-}
-
-/* Besseres Trennen sehr langer Uni-Namen */
+/* Bessere Trennstellen für sehr lange Namen */
 .hyphens-auto { hyphens: auto; }
 
-/* Mobil: Datum unter den Block setzen */
+/* Mobil: Datum unter den Inhalt */
 @media (max-width: 576px) {
     .teach-rows { grid-template-columns: 1fr; }
     .teach-date { text-align: left; margin-top: .25rem; }
 }
+
 
 
