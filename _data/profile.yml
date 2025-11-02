@@ -30,12 +30,10 @@ portrait_caption: >-
 
 education:
 - name: Ludwig-Maximilians-Universität München
-  #logo: #/assets/images/badges/MIT_Social_circle.png
   position: >- 
     Bachelor of Science in Computer Science plus Mathematics
   date: 09/2021
 - name: Friedrich-Alexander-Universität Erlangen-Nürnberg
-  #logo: #/assets/images/badges/PKU_red.png
   position: Master of Science in Mathematics
   date: 02/2024
 

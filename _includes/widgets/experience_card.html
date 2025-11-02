@@ -4,82 +4,94 @@
             <div class="card-body p-4">
                 <div class="row" data-masonry='{"percentPosition": true }'>
 
-                    {% if site.data.profile.education %}
+                    {%- if site.data.profile.education -%}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
                             <h6>Education</h6>
-                            <ul class="list-unstyled mb-1">
-                                {% for item in site.data.profile.education %}
-                                <li class="media mb-1">
-                                    <!-- <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1"> -->
-                                    <div class="media-body">
-                                        <div>{{ item.name }}</div>
-                                        <div class="small">{{ item.dept }}</div>
-                                        <div class="small d-flex">
-                                            <div>{{ item.position }}</div>
-                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                            <ul class="teach-list list-unstyled mb-0">
+                                {%- for item in site.data.profile.education -%}
+                                <li class="teach-item">
+                                    <div class="teach-rows">
+                                        <!-- linke Spalte -->
+                                        <div class="teach-left">
+                                            <h5 class="mb-1 hyphens-auto">{{ item.name }}</h5>
+                                            <div class="teach-meta">
+                                                <div class="teach-label">Position</div>
+                                                <div class="teach-value">{{ item.position }}</div>
+                                                {# Education hat i.d.R. keine Lecture – nur anzeigen, falls vorhanden #}
+                                                {%- if item.lecture -%}
+                                                <div class="teach-label">Lecture</div>
+                                                <div class="teach-value">{{ item.lecture }}</div>
+                                                {%- endif -%}
+                                            </div>
                                         </div>
+                                        <!-- rechte Spalte (Datum) -->
+                                        <div class="teach-date">{{ item.date }}</div>
                                     </div>
                                 </li>
-                                {% endfor %}
+                                {%- endfor -%}
                             </ul>
                         </div>
                     </div>
-                    {% endif %}
+                    {%- endif -%}
 
-                    {% if site.data.profile.experience %}
+                    {%- if site.data.profile.experience -%}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
                             <h6>Experience</h6>
-                            <ul class="list-unstyled mb-1">
-                                {% for item in site.data.profile.experience %}
-                                <li class="media mb-1">
-                                    <!-- <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1"> -->
-                                    <div class="media-body">
-                                        <div>{{ item.name }}</div>
-                                        <!--<div class="small">{{ item.dept }}</div> -->
-                                        <div class="small d-flex">
-                                            <div>{{ item.position }}</div>
-                                            <div>{{ item.lecture }}</div>
-                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                            <ul class="teach-list list-unstyled mb-0">
+                                {%- for item in site.data.profile.experience -%}
+                                <li class="teach-item">
+                                    <div class="teach-rows">
+                                        <div class="teach-left">
+                                            <h5 class="mb-1 hyphens-auto">{{ item.name }}</h5>
+                                            <div class="teach-meta">
+                                                <div class="teach-label">Position</div>
+                                                <div class="teach-value">{{ item.position }}</div>
+                                                {%- if item.lecture -%}
+                                                <div class="teach-label">Lecture</div>
+                                                <div class="teach-value">{{ item.lecture }}</div>
+                                                {%- endif -%}
+                                            </div>
                                         </div>
+                                        <div class="teach-date">{{ item.date }}</div>
                                     </div>
                                 </li>
-                                {% endfor %}
+                                {%- endfor -%}
                             </ul>
                         </div>
                     </div>
-                    {% endif %}
+                    {%- endif -%}
 
-                    {% if site.data.profile.teaching %}
+                    {%- if site.data.profile.teaching -%}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
                             <h6>Teaching</h6>
                             <ul class="teach-list list-unstyled mb-0">
-                                {% assign items = include.items | default: site.data.profile.teaching %}
-                                {% for t in items %}
+                                {%- for t in site.data.profile.teaching -%}
                                 <li class="teach-item">
                                     <div class="teach-rows">
-                                        <!-- Linke Spalte: Institution + Metadaten -->
                                         <div class="teach-left">
                                             <h5 class="mb-1 hyphens-auto">{{ t.name }}</h5>
                                             <div class="teach-meta">
-                                                <div class="teach-label">Position</div><div class="teach-value">{{ t.position }}</div>
-                                                <div class="teach-label">Lecture</div> <div class="teach-value">{{ t.lecture }}</div>
+                                                <div class="teach-label">Position</div>
+                                                <div class="teach-value">{{ t.position }}</div>
+                                                {%- if t.lecture -%}
+                                                <div class="teach-label">Lecture</div>
+                                                <div class="teach-value">{{ t.lecture }}</div>
+                                                {%- endif -%}
                                             </div>
                                         </div>
-                                        <!-- Rechte Spalte: Datum, rechtsbündig und ohne Umbruch -->
                                         <div class="teach-date">{{ t.date }}</div>
                                     </div>
                                 </li>
-                                {% endfor %}
+                                {%- endfor -%}
                             </ul>
                         </div>
                     </div>
-                    {% endif %}
+                    {%- endif -%}
 
                 </div>
-
             </div>
         </div>
     </div>
