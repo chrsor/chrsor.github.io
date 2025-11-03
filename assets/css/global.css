@@ -177,3 +177,16 @@ html[data-theme="dark"] .btn-outline-secondary:hover { background-color: #1f2937
 .bg-white { background-color: var(--card) !important; }
 .border-gray { border-color: var(--border) !important; }
 
+
+/* Mobile-Overlay für Publication-Item: Light & Dark */
+.pub-overlay { background-color: rgba(255, 255, 255, 0.92); }
+html[data-theme="dark"] .pub-overlay { background-color: rgba(15, 20, 32, 0.92); }  /* passend zu --card */
+
+/* Links in der Abstract-Linkzeile: im Normalzustand 'muted', Hover = Akzent */
+.abstract-links a { color: var(--muted); }
+.abstract-links a:hover { color: var(--link); text-decoration: underline; }
+
+/* Sicherheitsnetz: graue Rahmen folgen dem Token */
+.border-gray { border-color: var(--border) !important; }
+
+
