@@ -132,6 +132,10 @@ html[data-theme="dark"] .btn-outline-secondary:hover { background-color: #1f2937
 /* ===== Einheitliches Layout für Education/Experience/Teaching ===== */
 .teach-item + .teach-item { margin-top: 1.25rem; }
 
+.teach-item{
+    padding: 10px 0;
+}
+
 /* Hauptzeile: links Inhalt, rechts Datum */
 .teach-rows {
     display: grid;
