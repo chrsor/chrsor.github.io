@@ -3,7 +3,7 @@ title:          "Solvability Complexity Index Classification For Koopman Operato
 date:           2025-09
 selected:       true
 pub:            "Arxiv"
-pub_date:       "2025-09"
+pub_date:       "2025-09-19"
 abstract: >-
   We study the computation of the approximate point spectrum and the approximate point \varepsilon-pseudospectrum of bounded Koopman operators acting on L^p(\mathcal{X},\omega) for 1 < p < \infty and a compact metric space (\mathcal{X},d_{\mathcal{X}}) with finite Borel measure \omega.
 cover:          /assets/images/covers/cover1.jpg
