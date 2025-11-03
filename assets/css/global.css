@@ -165,5 +165,15 @@ html[data-theme="dark"] .btn-outline-secondary:hover { background-color: #1f2937
     .teach-date { text-align: left; margin-top: .25rem; }
 }
 
+/* Card-Köpfe/-Füße folgen den Theme-Tokens (Light/Dark) */
+.card-header,
+.card-footer {
+    background-color: var(--card) !important;
+    color: var(--text);
+    border-color: var(--border) !important;
+}
 
+/* Legacy-Helfer an Tokens anbinden */
+.bg-white { background-color: var(--card) !important; }
+.border-gray { border-color: var(--border) !important; }
 
