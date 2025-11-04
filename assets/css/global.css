@@ -193,4 +193,17 @@ html[data-theme="dark"] .pub-overlay { background-color: rgba(15, 20, 32, 0.92);
 /* Sicherheitsnetz: graue Rahmen folgen dem Token */
 .border-gray { border-color: var(--border) !important; }
 
+/* Progress bar */
+#read-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 1031; background: var(--link); transition: width .15s linear; }
+/* Back-to-top */
+#to-top { position: fixed; right: 16px; bottom: 16px; z-index: 1031; opacity: 0; pointer-events: none;
+    transition: opacity .2s ease; }
+#to-top.show { opacity: .9; pointer-events: auto; }
+#to-top .btn { border-radius: 999px; }
+@media (prefers-reduced-motion: reduce){
+    #read-progress { transition: none; }
+    #to-top { transition: none; }
+}
+
+
 
