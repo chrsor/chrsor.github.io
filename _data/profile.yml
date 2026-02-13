@@ -3,12 +3,12 @@ secondary_name: ""
 navbar_name: "Christopher Sorg"
 
 positions:
-- name: Research Assistant
-- name: Friedrich-Alexander-Universität Erlangen-Nürnberg
+- name: PhD Student (Hertling/Brattka)
+- name: University of the Bundeswehr Munich
   #logo: #/assets/images/badges/MIT_Social_circle.png
 
 
-email: "chr.sorg@fau.de"
+email: "chr.sorg@unibw.de"
 #gscholar: xFmQpf4AAAAJ
 github: chrsor
 orcid: 0009-0003-9684-6966
@@ -16,7 +16,7 @@ orcid: 0009-0003-9684-6966
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Welcome! I am a researcher in mathematical logic, computational analysis, topology & functional analysis, complexity theory, functional analysis and the philosophy of perception.
+    Welcome! I am a researcher in mathematical logic, computational (functional) analysis, functional analysis/spectral theory for bounded linear operators in Banach spaces and the philosophy of perception.
   </p>
   <p>
     In my career so far, I have gained extensive experience in the field of partial differential equations, 
@@ -79,7 +79,7 @@ teaching:
   - name: FAU Erlangen-Nürnberg
     position: Lecture Assistant
     lecture: Algebra & ODE for Computer Science (C3)
-    date: 10/2025 - today
+    date: 10/2025 - 01/2026
 #awards:
 #- name: Award Name 2
 #  date: 2024
