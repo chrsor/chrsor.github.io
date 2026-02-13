@@ -7,10 +7,10 @@ pub_date:       "2026-01-17"
 abstract: >
   We study the Solvability Complexity Index (SCI) of Koopman operator spectral computation in the information-based framework of towers of algorithms.
   Given a compact metric space $(\mathcal{X},d)$ with a finite Borel measure $\omega$ on $\mathcal{X}$ and a continuous
-  nonsingular map $F:\mathcal{X}\to \mathcal{X}$, our focus is the Koopman operator $\K_F$ acting on $L^p(\X,\omega)$ for $p\in\{1,\infty\}$ for the computational problem
+  nonsingular map $F:\mathcal{X}\to \mathcal{X}$, our focus is the Koopman operator $\mathcal{K}_F$ acting on $L^p(\mathcal{X},\omega)$ for $p\in\{1,\infty\}$ for the computational problem
   \[
    \Xi_{\sigma_{\mathrm{ap}}}(F)
-   :=\sigma_{\mathrm{ap}}\!\bigl(\K_F\bigr),
+   :=\sigma_{\mathrm{ap}}\!\bigl(\mathcal{K}_F\bigr),
   \]
   with input access given by point evaluations of $F\mapsto F(x)$ (and
   fixed quadrature access to $\omega$).
