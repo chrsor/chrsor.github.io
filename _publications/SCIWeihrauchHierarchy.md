@@ -1,9 +1,9 @@
 ---
 title: "Foundational Analysis Of The Solvability Complexity Index: The Weihrauch-SCI Intermediate Hierarchy And A Koopman Operator Example"
-date:           2025-03-19
+date:           2026-03-19
 selected:       true
 pub:            "ArXiv"
-pub_date:       "2025-03-19"
+pub_date:       "2026-03-19"
 abstract: >
   The Solvability Complexity Index (SCI) provides an abstract notion of computing a target map $\Xi$ from finitely many oracle evaluations 
   $\Lambda\subseteq \mathbb{C}$ via finite-height towers of pointwise limits.  We first give a foundational analysis of what this
