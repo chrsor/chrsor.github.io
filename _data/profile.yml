@@ -34,7 +34,7 @@ education:
     Bachelor of Science in Computer Science plus Mathematics
   date: 09/2021
 - name: Friedrich-Alexander-Universität Erlangen-Nürnberg
-  position: Master of Science in Mathematics
+  position: Master of Science in Mathematics (minor theoretical philosophy)
   date: 02/2024
 
 experience:
@@ -80,6 +80,14 @@ teaching:
     position: Lecture Assistant
     lecture: Algebra & ODE for Computer Science (C3)
     date: 10/2025 - 01/2026
+  - name: University of the Bundeswehr Munich
+    position: Lecture Assistant
+    lecture: Mathematical Logic
+    date: 04/2026 - 09/2026
+  - name: University of the Bundeswehr Munich
+    position: Lecture Assistant
+    lecture: Algorithms and Complexity
+    date: 04/2026 - 09/2026
 #awards:
 #- name: Award Name 2
 #  date: 2024
