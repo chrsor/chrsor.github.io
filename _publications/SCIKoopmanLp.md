@@ -1,5 +1,5 @@
 ---
-title: "Residual SCI Upper Bounds And Lower Witnesses For Koopman Approximate Point Spectra In \texorpdfstring{$L^{\MakeLowercase{p}}$}{Lp} For \texorpdfstring{$1<\MakeLowercase{p}<\infty$}{1<p<infty}"
+title: "Residual SCI Upper Bounds And Lower Witnesses For Koopman Approximate Point Spectra In $L^p$ For $1<p<\\infty$"
 date:           2025-09-19
 selected:       true
 pub:            "ArXiv"
