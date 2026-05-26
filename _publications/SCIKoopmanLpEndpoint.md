@@ -1,27 +1,17 @@
 ---
-title: "Koopman Spectral Computation Beyond The Reflexive Regime: Endpoint Solvability Complexity Index And Type-2 Links"
+title: "Endpoint Koopman Spectral Computation: $L^1$ Residual Bounds, $L^{\infty}$ Instability, and Point-Spectral SCI Calibration Families"
 date:           2026-01-17
 selected:       true
 pub:            "ArXiv"
 pub_date:       "2026-01-17"
 abstract: >
-  We study the Solvability Complexity Index (SCI) of Koopman operator spectral computation in the information-based framework of towers of algorithms.
-  Given a compact metric space $(\mathcal{X},d)$ with a finite Borel measure $\omega$ on $\mathcal{X}$ and a continuous
-  nonsingular map $F:\mathcal{X}\to \mathcal{X}$, our focus is the Koopman operator $\mathcal{K}_F$ acting on $L^p(\mathcal{X},\omega)$ for $p\in\{1,\infty\}$ for the computational problem
-  \[
-   \Xi_{\sigma_{\mathrm{ap}}}(F)
-   :=\sigma_{\mathrm{ap}}\!\bigl(\mathcal{K}_F\bigr),
-  \]
-  with input access given by point evaluations of $F\mapsto F(x)$ (and
-  fixed quadrature access to $\omega$).
+  We study endpoint Koopman spectral computation from the viewpoint of the Solvability Complexity Index (SCI). Let $(\mathcal X,d)$ be a compact metric space with finite Borel measure $\omega$, and let $\mathcal K_F$ be the Koopman operator associated with a continuous nonsingular map $F:\mathcal X \to \mathcal X$.
 
-  We clarify how the $L^1$ case can be brought into the same oracle model as the reflexive
-  regime $1<p<\infty$ by proving a uniform finite-dimensional quadrature compatibility, while highlighting the fundamentally different role played by non-separability at $p=\infty$.
+  First, on $L^1(\mathcal X,\omega)$, we record the endpoint residual upper-bound in the target-split form. The regularized compact fixed-$\varepsilon$ target $R_{\mathrm{ap},\varepsilon}(\mathcal K_F)$ is separated from the closed fixed-\(\varepsilon\) target $C_{\mathrm{ap},\varepsilon}(\mathcal K_F)$ and from the exact approximate point spectrum $\sigma_{\mathrm{ap}}(\mathcal K_F)$. This endpoint statement uses the same point-evaluation plus fixed-quadrature information model as the $1<p<\infty$ residual theory.
 
-  Beyond Koopman operators, we also construct a prototype family of decision problems
-  $(\Xi_m)_{m\in\mathbb N}$ realizing prescribed finite tower heights, providing a reusable
-  reduction source for future SCI lower bounds.
-  Finally, we place these results deeper in the broader computational landscape of Type-2/Weihrauch theory.
+  Second, we isolate two obstructions at the nonseparable endpoint $L^\infty$. Fixed quadrature schemes do not discretize the full $L^{\infty}$ unit sphere, and even inside measure-preserving Cantor homeomorphisms the map $F\mapsto \sigma_{\mathrm{ap}}(\mathcal K_F : L^{\infty} \to L^{\infty})$ is maximally discontinuous in Hausdorff distance under arbitrarily small uniform perturbations of $F$. We also show that finite-period Silver-tree block constructions cannot yield analytic hardness for the $L^{\infty}$ approximate point spectrum: for a fixed non-torsion $z_0\in\mathbb T$, the condition $z_0\in\sigma_{\mathrm{ap}}(\mathcal K_{F}:L^{\infty} \to L^{\infty})$ collapses to a Borel unbounded-period condition. In addition, fixed $L^{\infty}$ point-eigenvalue membership is Borel in the measure-preserving continuous class, so one fixed eigenvalue cannot encode a non-Borel tree predicate.
+
+  Third, we construct Koopman point-spectrum calibration families on the Cantor space. For each $m\in \mathbb{N}$, we build a family of continuous measure-preserving Cantor homeomorphisms whose labelled exact $L^{\infty}$ point-eigenvalue decisions are finite-query equivalent to the canonical alternating Cantor-matrix source problem of raw type-$G$ height $m$. Consequently these Koopman decision problems have exact raw type-$G$ SCI height $m$, and their tagged disjoint union has raw type-$G$ SCI $\infty$.
 cover:          /assets/images/covers/cover1.jpg
 authors:
 - Christopher Sorg
